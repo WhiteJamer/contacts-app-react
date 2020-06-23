@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "install": "npm install --prefix client && npm install --prefix server",
-    "start": "npm start --prefix server"
+    "start": "npm start --prefix client && npm start --prefix server"
   },
   "keywords": [
     "react",
