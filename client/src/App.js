@@ -6,7 +6,7 @@ import AuthPage from './pages/AuthPage';
 function App() {
 
   // const isAuth = localStorage.getItem('isAuth') && localStorage.getItem('isAuth') | false
-  const isAuth = true
+  const isAuth = localStorage.getItem("isAuth")
 
   return (
     <BrowserRouter>

@@ -30,5 +30,12 @@
       "name": "Дед Мороз",
       "number": "+79648434501"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123"
+    }
   ]
 }
