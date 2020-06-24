@@ -43,7 +43,7 @@ export default () => {
         try {
             const validated = await validateForm(name, number)
             console.log(validated);
-            
+
             const data = { name, number }
             validated && await axios.post(`${baseUrl}/contacts`, data, { headers: { ContentType: "application/json" } })
         } catch{

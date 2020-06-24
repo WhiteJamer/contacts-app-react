@@ -4,6 +4,7 @@ import { Layout, Input, Button, Form } from 'antd'
 import axios from 'axios'
 import { useState } from 'react'
 import { baseUrl } from '../../config'
+import { Redirect, useHistory } from 'react-router-dom'
 
 const layout = {
     labelCol: {
@@ -30,6 +31,7 @@ const onFinishFailed = errorMessage => {
 export default () => {
     const [usernameInput, setUsernameInput] = useState('')
     const [passwordInput, setPasswordInput] = useState('')
+    const history = useHistory();
 
     const loginHandler = async () => {
         const res = await axios.get(`${baseUrl}/users?username=${usernameInput}&password=${passwordInput}`)
@@ -37,8 +39,8 @@ export default () => {
         
         if (res.data.length > 0){
             localStorage.setItem("isAuth", true)
+            history.push('/')
         }
-        else return
     }
 
     const changeHandler = (e) => {
