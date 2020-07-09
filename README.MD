@@ -24,5 +24,12 @@ React-приложение с json-server в качестве бекенда
 
 - Готово теперь вы можете использовать это приложение по адресу [http://localhost:3000](http://localhost:3000)
 
+**Скрин #1**: Общий вид приложения.
+![screen-1.png](https://ltdfoto.ru/images/2020/07/09/screen-1.png)
 
+**Скрин #2**: Изменение контакта в модальном окне.
+![screen-2.png](https://ltdfoto.ru/images/2020/07/09/screen-2.png)
+
+**Скрин #3**: Подтвержение удаления контакта в модальном окне.
+![screen-3.png](https://ltdfoto.ru/images/2020/07/09/screen-3.png)
 
